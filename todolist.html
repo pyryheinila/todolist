@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="container">
+      <input onkeydown="
+      if (event.key === 'Enter') {
+        newTodo();
+      }
+      " type="text" class="js-input input-text"
+      required placeholder="write something">
+      <input type="date" class="date-select js-date">
+    
+      <button class="submit" onclick="
+      addComponent();
+      ">Submit</button>
+    </div>
+    <div class="js-todo-container todo-container">
+    </div>
+  </body>
+</html>
